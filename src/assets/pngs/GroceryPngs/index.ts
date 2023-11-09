@@ -1,0 +1,6 @@
+export {default as grocery1} from './grocery1.png'
+export {default as grocery2} from './grocery2.png'
+export {default as grocery3} from './grocery3.png'
+export {default as grocery4} from './grocery4.png'
+export {default as grocery5} from './grocery5.png'
+export {default as grocery6} from './grocery6.png'

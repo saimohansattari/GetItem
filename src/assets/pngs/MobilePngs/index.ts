@@ -1,0 +1,6 @@
+export {default as Mobile1} from './Mobile1.png'
+export {default as Mobile2} from './Mobile2.png'
+export {default as Mobile3} from './Mobile3.png'
+export {default as Mobile4} from './Mobile4.png'
+export {default as Mobile5} from './Mobile5.png'
+export {default as Mobile6} from './Mobile6.png'

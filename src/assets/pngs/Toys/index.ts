@@ -1,0 +1,6 @@
+export {default as Toy1} from './Toy1.png'
+export {default as Toy2} from './Toy2.png'
+export {default as Toy3} from './Toy3.png'
+export {default as Toy4} from './Toy4.png'
+export {default as Toy5} from './Toy5.png'
+export {default as Toy6} from './Toy6.png'

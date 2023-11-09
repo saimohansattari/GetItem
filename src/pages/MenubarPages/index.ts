@@ -1,0 +1,7 @@
+export {default as Grocery} from './Grocery.tsx'
+export {default as Mobiles} from './Mobiles.tsx'
+export {default as JentsWear} from './JentsWear.tsx'
+export {default as GirlsWear} from './GirlsWear.tsx'
+export {default as KidsWear} from './KidsWear.tsx'
+export {default as Electronics} from './Electronics.tsx'
+export {default as BeautyToys} from './BeautyToys.tsx'
