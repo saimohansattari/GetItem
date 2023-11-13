@@ -28,8 +28,10 @@ import {
   toys,
 } from "../constant";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function Home() {
+  const navigate = useNavigate();
   return (
     <div>
       <MainDiv>
@@ -53,7 +55,12 @@ function Home() {
         <ProductScrollDiv>
           <Scroll_1>
             {electronics.map((Item) => (
-              <ProductCard key={Item.id}>
+              // <Link to="./Selectedproduct">
+
+              <ProductCard
+                key={Item.id}
+                onClick={() => navigate("./Selectedpage")}
+              >
                 <ProductImg src={Item.Proimg} alt="Grocery" />
                 <ProductText>
                   <ProductName>{Item.ProName}</ProductName>
@@ -94,6 +101,7 @@ function Home() {
                   <OfferText>Buy 3 get Extra 3% Disscount</OfferText>
                 </ProductText>
               </ProductCard>
+              // </Link>
             ))}
           </Scroll_1>
         </ProductScrollDiv>

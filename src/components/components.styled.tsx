@@ -306,6 +306,7 @@ export const StyledDiv1 = styled.div`
 `;
 
 export const ProductCard = styled.div`
+  text-decoration: none;
   display: flex;
   justify-content: center;
   align-items: center;
