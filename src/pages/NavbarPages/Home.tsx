@@ -107,7 +107,7 @@ function Home() {
         </ProductScrollDiv>
 
         {/* JentsWeat scroll section */}
-        <ProductScrollDiv>
+        <ProductScrollDiv onClick={() => navigate("./Selectedpage")}>
           <Scroll_1>
             {menswear.map((Item) => (
               <ProductCard key={Item.id}>
