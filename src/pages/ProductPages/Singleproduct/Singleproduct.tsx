@@ -21,7 +21,7 @@ function Singleproduct() {
   const { id } = useParams();
 
   useEffect(() => {
-    axios.get(`https://fakestoreapi.com/products/${id}`).then((res) => {
+    axios.get(`https://fakestoreapi.com/products/${id} `).then((res) => {
       // setState(res.data);
       // console.log(res.data);
       if (Array.isArray(res.data)) {
@@ -48,7 +48,7 @@ function Singleproduct() {
         <div id="MainSection" key={data.id}>
           <div id="SubSection">
             <div id="Image">
-              <img src="" alt="product" />
+              <img src={data.image} alt="product" />
             </div>
 
             <div id="Btn">
@@ -71,7 +71,7 @@ function Singleproduct() {
               <span id="Rating">
                 {data.rating.rate} &nbsp; <i className="fa-solid fa-star"></i>
               </span>
-              <p>26588 Ratings, 5285 Reviews *</p>
+              <p>{data.rating.count} Ratings, 5285 Reviews *</p>
               <span>Free Delivery</span>
             </div>
 
@@ -88,18 +88,13 @@ function Singleproduct() {
               <div id="productDetails">
                 <h3>Product Details</h3>
 
-                <p>Name : Men Casual Shirt</p>
+                <p>Name : {data.title}</p>
                 <p>Fabric : Cotton Blend</p>
                 <p>Sleeve Length : Short Sleeves</p>
                 <p>Pattern : Printed</p>
                 <p>Net Quantity (N) : 1</p>
                 <p>Sizes : </p>
-                {/* <p>S (Chest Size : 36 in, Length Size: 27 in)</p>
-            <p>M (Chest Size : 38 in, Length Size: 28 in)</p>
-            <p>L (Chest Size : 40 in, Length Size: 29 in)</p>
-            <p>XL (Chest Size : 42 in, Length Size: 30 in)</p>
-            <p>XXL (Chest Size : 44 in, Length Size: 30.5 in)</p> */}
-                <p>STREP HALF SLEEVE SOFT FABRIC WEIGHT LESS MEN SHIRT</p>
+                <p>{data.description}</p>
                 <p>Country of Origin : India</p>
               </div>
             </div>
