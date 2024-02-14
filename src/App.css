@@ -1,75 +1,218 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
 hr {
-    width: 80px;
-    border: 1px solid rgb(28, 26, 26);
+  width: 80px;
+  border: 1px solid rgb(28, 26, 26);
 }
 
 .rating {
-    display: inline-block;
-    position: relative;
-    height: 25px;
-    line-height: 25px;
-    font-size: 25px;
+  display: inline-block;
+  position: relative;
+  height: 25px;
+  line-height: 25px;
+  font-size: 25px;
+}
+
+.rating label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  cursor: pointer;
+}
+
+.rating label:last-child {
+  position: static;
+}
+
+.rating label:nth-child(1) {
+  z-index: 5;
+}
+
+.rating label:nth-child(2) {
+  z-index: 4;
+}
+
+.rating label:nth-child(3) {
+  z-index: 3;
+}
+
+.rating label:nth-child(4) {
+  z-index: 2;
+}
+
+.rating label:nth-child(5) {
+  z-index: 1;
+}
+
+.rating label input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.rating label .icon {
+  float: left;
+  color: transparent;
+}
+
+.rating label:last-child .icon {
+  color: rgba(128, 128, 128, 0.63);
+}
+
+.rating:not(:hover) label input:checked ~ .icon,
+.rating:hover label:hover input ~ .icon {
+  color: rgb(255, 215, 0);
+}
+
+.rating label input:focus:not(:checked) ~ .icon:last-child {
+  color: #000;
+  text-shadow: 0 0 5px #09f;
+}
+
+#MainSection {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-top: 25px;
+  justify-content: center;
+}
+#SubSection {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  gap: 15px;
+}
+#Image {
+  padding: 10px;
+  border: 1px solid #2468a2;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#Image img {
+  width: 400px;
+  height: 400px;
+}
+
+#Btn {
+  display: flex;
+  gap: 10px;
+  padding: 40px;
+  align-items: center;
+  justify-content: center;
+}
+#Btn #Buy-Btn {
+  background-color: #2468a2;
+  padding: 13px 20px;
+  display: flex;
+  align-items: center;
+  font-size: medium;
+  justify-content: center;
+  border: 1px #2468a2 solid;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#Btn #Cart-Btn {
+  background-color: white;
+  color: #2468a2;
+  padding: 13px 20px;
+  display: flex;
+  align-items: center;
+  font-size: medium;
+  justify-content: center;
+  border: 1px #2468a2 solid;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* #SubSection1{
+    width: 50vw;
+ display: flex;
+ flex-direction: column;
+ background-color: rebeccapurple;
+ gap: 20px;
+} */
+
+.Section1 {
+  background-color: rgba(245, 245, 245, 0.359);
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  border: 1px solid #2468a2;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
+.Section1 .fa-indian-rupee-sign {
+  font-size: 15px;
+}
+
+.Section1 h3,
+h2 {
+  margin-top: 0px;
+}
+
+#SubSection #Rating {
+  font-size: medium;
+  color: white;
+  background-color: rgba(0, 128, 0, 0.681);
+  width: 50px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  border-radius: 50px;
+  align-items: center;
+}
+#SubSection .fa-star {
+  font-size: 8px;
+}
+
+.Section2 {
+  padding: 20px;
+  background-color: rgba(245, 245, 245, 0.359);
+  border: 1px solid #2468a2;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
+.Section2 #Sizes {
+  padding: 10px 12px;
+  border-radius: 100px;
+  align-items: center;
+  border: 1px solid #2468a2;
+
+  &:hover {
+    background-color: rgb(255, 231, 251);
   }
-  
-  .rating label {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    cursor: pointer;
+}
+
+#productDetails {
+  border: 1px solid #2468a2;
+  background-color: rgba(245, 245, 245, 0.359);
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
+#productDetails p {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 430px) {
+  #MainSection {
+    justify-content: none;
   }
-  
-  .rating label:last-child {
-    position: static;
+
+  #SubSection #Image {
+    padding: 0px;
   }
-  
-  .rating label:nth-child(1) {
-    z-index: 5;
-  }
-  
-  .rating label:nth-child(2) {
-    z-index: 4;
-  }
-  
-  .rating label:nth-child(3) {
-    z-index: 3;
-  }
-  
-  .rating label:nth-child(4) {
-    z-index: 2;
-  }
-  
-  .rating label:nth-child(5) {
-    z-index: 1;
-  }
-  
-  .rating label input {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-  }
-  
-  .rating label .icon {
-    float: left;
-    color: transparent;
-  }
-  
-  .rating label:last-child .icon {
-    color:rgba(128, 128, 128, 0.63);
-  }
-  
-  .rating:not(:hover) label input:checked ~ .icon,
-  .rating:hover label:hover input ~ .icon {
-    color: rgb(255,215,0);
-  }
-  
-  .rating label input:focus:not(:checked) ~ .icon:last-child {
-    color: #000;
-    text-shadow: 0 0 5px #09f;
-  }
+}

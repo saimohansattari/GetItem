@@ -55,7 +55,8 @@ function App() {
           <Route path="/Electronics" element={<Electronics />} />
           <Route path="/BeautyToys" element={<BeautyToys />} />
 
-          <Route path="/Selectedproduct" element={<Singleproduct />} />
+          <Route path="/SingleProduct/:id" element={<Singleproduct />} />
+          <Route path="/SingleProduct" element={<Singleproduct />} />
         </Routes>
       </Router>
     </>
