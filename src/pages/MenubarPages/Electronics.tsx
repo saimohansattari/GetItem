@@ -12,6 +12,7 @@ import {
   OfferText,
 } from "../../components/components.styled";
 import axios from "axios";
+import "../../DB/Api.json";
 import { useParams } from "react-router-dom";
 
 interface Product {

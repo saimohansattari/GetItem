@@ -1,1 +1,53 @@
-{}
+{
+  "Products": [
+    {
+      "id": "1",
+      "Proimg": "path/to/grocery1.jpg",
+      "ProName": "Rice",
+      "ProWeight": "7",
+      "ProPrice": "140"
+    },
+    {
+      "id": "2",
+      "Proimg": "path/to/grocery2.jpg",
+      "ProName": "Fresh Vegetables",
+      "ProWeight": "12",
+      "ProPrice": "200"
+    },
+    {
+      "id": "3",
+      "Proimg": "path/to/grocery3.jpg",
+      "ProName": "Healthy Biscuits",
+      "ProWeight": "3",
+      "ProPrice": "239"
+    },
+    {
+      "id": "4",
+      "Proimg": "path/to/grocery4.jpg",
+      "ProName": "Ovomeltine",
+      "ProWeight": "17",
+      "ProPrice": "199"
+    },
+    {
+      "id": "5",
+      "Proimg": "path/to/grocery5.jpg",
+      "ProName": "Dhal",
+      "ProWeight": "22",
+      "ProPrice": "123"
+    },
+    {
+      "id": "6",
+      "Proimg": "path/to/grocery6.jpg",
+      "ProName": "Soft Drinks",
+      "ProWeight": "1",
+      "ProPrice": "150"
+    },
+    {
+      "id": "7",
+      "Proimg": "path/to/grocery7.jpg",
+      "ProName": "Soft Drinks",
+      "ProWeight": "1",
+      "ProPrice": "150"
+    }
+  ]
+}
