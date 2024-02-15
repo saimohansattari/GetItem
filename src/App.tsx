@@ -2,8 +2,6 @@ import "./App.css";
 import Navbar from "./pages/NavbarPages/Navbar";
 import MenuNav from "./pages/NavbarPages/MenuNav";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-// import Grocery from './pages/MenubarPages/Grocery';
-// import Mobiles from './pages/MenubarPages/Mobiles'
 import {
   Grocery,
   Mobiles,
@@ -56,7 +54,7 @@ function App() {
           <Route path="/BeautyToys" element={<BeautyToys />} />
 
           <Route path="/SingleProduct/:id" element={<Singleproduct />} />
-          <Route path="/SingleProduct" element={<Singleproduct />} />
+          {/* <Route path="/SingleProduct" element={<Singleproduct />} /> */}
         </Routes>
       </Router>
     </>
