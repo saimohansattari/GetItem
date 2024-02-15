@@ -12,7 +12,6 @@ import {
   OfferText,
 } from "../../components/components.styled";
 import axios from "axios";
-import { useParams } from "react-router-dom";
 
 interface Product {
   id: number;
@@ -24,7 +23,6 @@ interface Product {
 }
 
 function Electronics() {
-  // const { id }: { id?: string } = useParams();
   const [products, setProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);

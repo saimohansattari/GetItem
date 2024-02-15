@@ -22,25 +22,22 @@ function Singleproduct() {
 
   useEffect(() => {
     axios.get(`https://fakestoreapi.com/products/${id} `).then((res) => {
-      // setState(res.data);
       // console.log(res.data);
       if (Array.isArray(res.data)) {
         setState(res.data);
       } else {
-        setState([res.data]); // Wrap non-array response in an array
+        setState([res.data]); // wrap nonarray response in an array
       }
       console.log(res.data);
     });
   }, []);
 
   const handleAddToCart = (e: { preventDefault: () => void }) => {
-    e.preventDefault(); // Prevent page reload
-    // Add your logic to handle adding to cart here
+    e.preventDefault();
   };
 
   const handleBuyNow = (e: { preventDefault: () => void }) => {
-    e.preventDefault(); // Prevent page reload
-    // Add your logic to handle buying now here
+    e.preventDefault();
   };
   return (
     <StyledDiv1>
